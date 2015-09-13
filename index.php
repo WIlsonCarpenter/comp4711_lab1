@@ -11,8 +11,22 @@ and open the template in the editor.
     </head>
     <body>
         <?php
-        // put your code here
-        echo 'hello';
+        include 'Student.php';
+        $students = array();
+        
+        $first = new Student();
+        $first->surname = "Doe";
+        $first->first_name = "John";
+        $first->add_email('home','john@doe.com');
+        $first->add_email('work','jdoe@mcdonalds.com');
+        $first->add_grade(65);
+        $first->add_grade(75);
+        $first->add_grade(55);
+        $students['j123'] = $first;
+        
+        foreach($students as $s) {
+            echo $s->toString();
+        }
         ?>
     </body>
 </html>
