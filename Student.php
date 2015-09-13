@@ -45,8 +45,8 @@ class Student {
         foreach ($this->grades as $value) {
             $total += $value;
         }
-        
-        return $total / count($this->grades);
+        //round the result to the nearest tenth
+        return round($total / count($this->grades), 1);
     } 
     
     /**
