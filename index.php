@@ -7,7 +7,7 @@ Author: Wilson Carpenter
 <html>
     <head>
         <meta charset="UTF-8">
-        <title></title>
+        <title>Wilson Carpenter - Lab 1</title>
     </head>
     <body>
         <?php
